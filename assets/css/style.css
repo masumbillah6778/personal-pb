@@ -1137,8 +1137,8 @@ body.dark tbody tr td sup {
 }
 	
 .tooltiptext img {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	padding: 10px;
 	background-size: cover;
 }
