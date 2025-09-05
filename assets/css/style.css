@@ -1771,11 +1771,22 @@ body.dark .footer {
 		width: 100%;
 	}
 	  
-	.footer span {
+	.footer .marquee marquee span {
 	    font-size: 15px;
 	}
 	  
-	.footer-news p {
-	    font-size: 15px;
+	.footer .footer-news p {
+		font-size: 15px;
+	}
+
+	.footer .footer-news p a {
+		font-size: 15px;
+	}
+
+	.footer .footer-news p img {
+		width: 10px;
+		height: 7px;
+		border: 1px solid yellow;
 	}
 }
+
