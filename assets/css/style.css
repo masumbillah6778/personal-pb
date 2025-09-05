@@ -1135,6 +1135,30 @@ body.dark tbody tr td sup {
 	border-style: solid;
 	border-color: red transparent transparent transparent;
 }
+
+.tooltip.down .tooltiptext  {
+	margin-bottom: 0px;
+	padding: 5px;
+	bottom: 100%;
+	left: 50%;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.3s;
+	visibility: hidden;
+	z-index: 999;
+	transform: translateX(-50%);
+}
+
+.tooltip.down .tooltiptext::after {
+	content: " ";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-top: -30px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent transparent green transparent;
+}
 	
 .tooltiptext img {
 	width: 150px;
