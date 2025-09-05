@@ -1248,16 +1248,16 @@ body.dark .footer {
 	}
 	
 	#sidebar .brand {
-	  font-size: 15px;
+		font-size: 15px;
 	}
 	
 	#sidebar .brand bn {
-	  font-size: 15px;
+		font-size: 15px;
 	}
 	
 	#sidebar .side-menu li a.profile {
-	  font-size: 10px;
-  }
+		font-size: 10px;
+	}
 
 
 	/*================================ Search input =================================*/
@@ -1327,10 +1327,14 @@ body.dark .footer {
 	    display: block;
 	}
 	
-	
-	
-/*============================ FORCE TABLE =================================*/
+	/*============================ FORCE TABLE =================================*/
   
+	#content main .table-data .order {
+		background: var(--white);
+		width: 100%;
+		height: 600px;
+	}
+	
 	#content main .table-data .head {
 		min-width: px;
 	}
@@ -1355,19 +1359,8 @@ body.dark .footer {
 	tbody tr td sup {
 	font-size: 5px;
 	}
-/*================================ OFFICER TABIEL =================================*/
-
-	#content main .table-data .todo {
-		width: 100%;
-	}
-
-	#content main .table-data .offisar-table-box {
-		width: 100%;
-	}
-
-	#content main .table-data .offisar-table-box table {
-		width: 100%;
-	}
+	
+	/*================================ FOOTER =================================*/
 	  
 	.footer .marquee marquee span {
 	    font-size: 15px;
