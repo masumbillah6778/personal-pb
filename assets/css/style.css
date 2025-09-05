@@ -1112,7 +1112,7 @@ body.dark tbody tr td sup {
 	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 }
   
-.tooltiptext {
+.tooltip .tooltiptext  {
 	margin-bottom: 0px;
 	padding: 5px;
 	top: 100%;
@@ -1125,7 +1125,7 @@ body.dark tbody tr td sup {
 	transform: translateX(-50%);
 }
   
-.tooltiptext::after {
+.tooltip .tooltiptext::after {
 	content: " ";
 	position: absolute;
 	top: 100%;
@@ -1789,4 +1789,3 @@ body.dark .footer {
 		border: 1px solid yellow;
 	}
 }
-
