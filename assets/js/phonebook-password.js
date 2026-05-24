@@ -1,6 +1,6 @@
 	
 const errorText = document.querySelector(".error-text");
-var Password ="1234";
+var Password ="123321";
 function passcheck(){
     if (document.getElementById('pass1').value != Password) {
         errorText.style.display = "block";
