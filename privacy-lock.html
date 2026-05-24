@@ -1,0 +1,288 @@
+<!-- ====================================================
+Android Application
+Name:        Parsonal Phone Book - 2026
+Author :     https://masumbillah6778bd.blogspot.com
+License:     Free Version
+Version:     1.0
+Published:   01 jun 2026
+==================================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- icon -->
+	<link rel="icon" type="image/x-icon" href="https://masumbillah6778.github.io/images/pbb-logo.jpg">
+	<!-- My CSS -->
+	<link rel="stylesheet" href="https://masumbillah6778.github.io/css/vip-table.ss">
+	<link rel="stylesheet" href="https://masumbillah6778.github.io/rab-8-phone-book-headquarters/assets/css/style.cs">
+	<link rel="stylesheet" href="assets/css/style.css">
+<style>
+
+</style>
+	<title> Personal PB 2025 </title>
+</head>
+<body>
+
+
+<!--====================================== SIDEBAR ======================================-->
+<section id="sidebar">
+	<a href="#" class="brand">
+		<i class='bx bxs-smile'></i>
+		<span class="text"> P PB <br /> <bn> [ ২০২৬ ] </bn> </span>
+	</a>
+	<ul class="side-menu top">
+		<li>
+			<a href="index.html">
+				<i class='bx bxs-dashboard'></i>
+				<span class="text"> বল্লী </span>
+			</a>
+		</li>
+		
+		<li>
+			<a href="kathonda.html">
+				<i class='bx bxs-dashboard'></i>
+				<span class="text"> কাথন্ডা </span>
+			</a>
+		</li>
+		
+		<li class="active">
+			<a href="#">
+				<i class='bx bxs-dashboard'></i>
+				<span class="text"> অন্যান্য </span>
+			</a>
+		</li>
+
+		<li id="privacy">
+			<a ondblclick="location.href='privacy.html'">
+				<i class='bx bxs-dashboard'></i>
+				<span class="text"> </span>
+			</a>
+		</li>
+
+		<li>
+			<a href="#">
+				<i class='bx bxl-whatsapp' ></i>
+				<span class="text"> Whatsapp </span>
+			</a>
+		</li>
+		
+		<li>
+			<a href="https://masumbillah6778bd.blogspot.com/2024/08/rab-8-phone-book.html" target="_blank">
+				<i class='bx bxs-cloud-download'></i>
+				<span class="text"> Update </span>
+			</a>
+		</li>
+		
+		<li>
+			<a href="https://masumbillah6778.github.io/rab_8_Barisal_phone-book/" target="_blank">
+				<i class='bx bxl-chrome'></i>
+				<span class="text"> Web View </span>
+			</a>
+		</li>
+		
+		<li>
+			<a href="#">
+				<i class='bx bxs-cog'></i>
+				<span class="text"> Settings </span>
+			</a>
+		</li>
+	</ul>
+	
+	<ul class="side-menu">
+		<li>
+			<a href="#" class="profile">
+				<i class='bx bx-user'></i>
+				<span class="rainbow-text"> Md. Masum Billah 6778 </span>
+			</a>
+		</li>
+	</ul>
+</section>
+<!-- SIDEBAR -->
+ 
+
+
+<!-- CONTENT -->
+<section id="content">
+	<!-- ============================================= Top Menu ============================================= -->
+	<nav>
+		<i class='bx bx-menu' ></i>
+		<form action="#">
+			<div class="input-group form-input">
+				<input type="text" required="" id="myInput" onkeyup="filterTable()">
+				<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+			</div>
+		</form>
+
+		<input type="checkbox" id="switch-mode" hidden>
+		<label for="switch-mode" class="switch-mode"></label>
+		<a href="#" class="profile">
+			<img src="https://masumbillah6778.github.io/images/pbb-logo.jpg">
+		</a>
+	</nav>
+	<!-- NAVBAR -->
+	 
+	
+	
+	<!-- MAIN -->
+	<main>
+		<!-- ============================================= EMARINCI NUMBR ============================================= -->
+		 <div class="head-title">
+			<h1> অন্যান্য </h1>
+		</div>
+		
+		
+		
+		
+		
+		<!-- ============================================= সকল আত্মীয় স্বজনদের ফোন নাম্বার ============================================= -->
+		<div class="table-data">
+			<div class="order">
+				<div class="head">
+					<h3> সকল আত্মীয় স্বজনদের ফোন নাম্বার </h3>
+				</div>
+				<main class="table" id="customers_table">
+					<section class="table__body">
+						<table>
+							<thead>
+								<tr class="red">
+									<th width="10%"> নং </th>
+									<th width="20%"> প্রোফাইল </th>
+									<th width="50%"> নাম </th>
+									<th width="20%"> ফোন </th>
+								</tr>
+							</thead>
+							
+							
+							<tbody>
+								<tr>
+									<td>  </td>
+									<td> <div class="tooltip down" id="profile"> <img src="res/drawable/family-photo/masum.jpg" alt=""> <span class="tooltiptext"> <img src="res/drawable/family-photo/masum.jpg" alt=""> </span> </div> </td>
+									<td> মাসুম Wifi বরিশাল </td>
+									<td><span class="status delivered">
+										<a href="tel:01916-121010">
+											<img src="res/drawable/icons/call.png" alt="">
+										</a>
+									</td>
+								</tr>
+
+								<tr>
+									<td>  </td>
+									<td> <div class="tooltip down" id="profile"> <img src="res/drawable/family-photo/masum.jpg" alt=""> <span class="tooltiptext"> <img src="res/drawable/family-photo/masum.jpg" alt=""> </span> </div> </td>
+									<td> জোহরা </td>
+									<td><span class="status delivered">
+										<a href="tel:01302-833381">
+											<img src="res/drawable/icons/call.png"pngt="">
+										</a>
+									</td>
+								</tr>
+
+								<tr>
+									<td>  </td>
+									<td> <div class="tooltip top" id="profile"> <img src="res/drawable/family-photo/masum.jpg" alt=""> <span class="tooltiptext"> <img src="res/drawable/family-photo/masum.jpg" alt=""> </span> </div> </td>
+									<td> পাখি </td>
+									<td><span class="status delivered">
+										<a href="tel:01751-730280">
+											<img src="res/drawable/icons/call.png" alt="">
+										</a>
+									</td>
+								</tr>
+
+								<tr>
+									<td>  </td>
+									<td> <div class="tooltip down" id="profile"> <img src="res/drawable/family-photo/masum.jpg" alt=""> <span class="tooltiptext"> <img src="res/drawable/family-photo/masum.jpg" alt=""> </span> </div> </td>
+									<td> বিথী </td>
+									<td><span class="status delivered">
+										<a href="tel:01859-763720">
+											<img src="res/drawable/icons/call.png" alt="">
+										</a>
+									</td>
+								</tr>
+
+								<tr>
+									<td>  </td>
+									<td> <div class="tooltip down" id="profile"> <img src="res/drawable/family-photo/masum.jpg" alt=""> <span class="tooltiptext"> <img src="res/drawable/family-photo/masum.jpg" alt=""> </span> </div> </td>
+									<td> meoul </td>
+									<td><span class="status delivered">
+										<a href="tel:01754-604359">
+											<img src="res/drawable/icons/call.png"pngt="">
+										</a>
+									</td>
+								</tr>
+
+								<tr>
+									<td>  </td>
+									<td> <div class="tooltip top" id="profile"> <img src="res/drawable/family-photo/masum.jpg" alt=""> <span class="tooltiptext"> <img src="res/drawable/family-photo/masum.jpg" alt=""> </span> </div> </td>
+									<td> teoul </td>
+									<td><span class="status delivered">
+										<a href="tel:01754-604359">
+											<img src="res/drawable/icons/call.png" alt="">
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</main>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!-- ============================================= FOOTER ============================================= -->
+		<div class="footer">
+			<div class="marquee">
+				<marquee direction="left" scrollamount="5"><span> আসসালামু আলাইকুম ওয়া রাহমাতুল্লাহ। যদি কোনো র‍্যাব সদস্য এই অ্যাপটির ভেতরে কোনো প্রকার ভুল পেয়ে থাকেন তাহলে দয়াকরে নিচের ৬৭৭৮ নাম্বারটিতে যোগাযোগ করুন। </span></marquee>
+			</div>
+			<hr>
+			<div class="footer-news">
+				<p> &copy মোঃ মাসুম বিল্লাহ <a href="tel:01754-604359"> ৬৭৭৮ </a>
+				<img src="res/drawable/images/bangladesh-flag.gif"></p>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!-- ============================================= AOTU MUSIC ============================================= -->
+		<audio autoplay hidden>
+			<source src="https://github.com/masumbillah6778/tones/raw/main/salam1.mp3" type="audio/mpeg">
+		</audio>
+
+
+
+
+		<!-- ============================================= FLOTING BUTTON ============================================= -->
+		<div class="floating-container">
+			<div class="floating-button"> 🩺 </div>
+
+			<div class="element-container">
+				<a href="tel:01777-710809" class="float-element tooltip-left">
+					<img src="res/drawable/icons/call2.png" alt="" class="material-images">
+				</a>
+					
+				<a href="tel:01754-604359" class="float-element tooltip-left">
+					<img src="res/drawable/icons/ambulance.png" alt="" class="material-images">
+				</a>
+					
+				<a href="tel:01754-604359" class="float-element tooltip-left">
+					<img src="res/drawable/icons/doctor.png" alt="" class="material-images">
+				</a>
+			</div>
+		</div>
+	</main>
+</section>
+	
+
+<script src="https://masumbillah6778.github.io/rab-8-phone-book-headquarters/assets/js/script.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="https://masumbillah6778.github.io/js/vip-table.js"></script>
+<script src="https://masumbillah6778.github.io/js/diwali_effect.js"></script>
+	
+</body>
+</html>
