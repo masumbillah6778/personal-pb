@@ -835,8 +835,8 @@ input:valid ~ label {
 	font-family: var(--solaiman-lipi);
 	text-align: center;
 	border-bottom: 4px solid var(--green);
+  }
 }
-
 
 
 
