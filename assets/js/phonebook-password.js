@@ -8,7 +8,7 @@ function passcheck(){
         return false;
     }
     if (document.getElementById('pass1').value == Password) {
-        window.open("https://masumbillah6778.github.io/personal-pb/private.html", "_blank");
+        window.open("https://masumbillah6778.github.io/personal-pb/private.html");
     }
 
 }
