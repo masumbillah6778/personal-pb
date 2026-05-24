@@ -968,6 +968,36 @@ body.dark tbody tr td sup {
 
 
 
+/* ============================================= FOOTRE ============================================= */
+
+.content {
+    background: pink;
+    width: 100%;
+    min-height: 100vh;
+    border: 2px solid blue;
+  }
+  
+  .content h1 {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'solaiman-lipi';
+    text-align: center;
+  }
+
+  .main-thumbnail img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid red;
+  }
+
+
+
 
 
 /* ============================================= FOOTRE ============================================= */
