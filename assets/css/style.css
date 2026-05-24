@@ -1380,14 +1380,14 @@ body.dark .footer {
 /*================================ PASSWORD =================================*/
 	  
 	
-.passwoed {
+.password {
     background: pink;
     width: 100%;
     min-height: 100vh;
     border: 2px solid blue;
   }
   
-  .passwoed h1 {
+  .password h1 {
     background-color: green;
     color: white;
     padding: 10px;
